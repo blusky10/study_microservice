@@ -16,12 +16,12 @@ public class SpringConfigServerApplication implements CommandLineRunner{
 		SpringApplication.run(SpringConfigServerApplication.class, args);
 	}
 
-	@Value("${application.name}")
-	String name;
+	@Value("${spring.application.name}")
+	String application;
 
 	@Override
 	public void run(String... args) throws Exception {
-		log.info("Load Properties : " + name);
+		log.info("Application : " + application);
 	}
 
 }
