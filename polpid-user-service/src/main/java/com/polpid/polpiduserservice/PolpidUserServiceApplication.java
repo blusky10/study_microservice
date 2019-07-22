@@ -9,5 +9,4 @@ public class PolpidUserServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PolpidUserServiceApplication.class, args);
 	}
-
 }
