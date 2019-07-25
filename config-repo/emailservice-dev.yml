@@ -1,5 +1,6 @@
-application:
-  name: emailservice-dev
+spring:
+  application:
+    name: emailservice-dev
 
 spring:
   datasource:

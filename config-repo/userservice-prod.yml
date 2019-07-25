@@ -1,2 +1,3 @@
-application:
-  name: userservice-prod-git
+spring:
+  application:
+    name: userservice-prod-git
