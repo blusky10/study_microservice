@@ -1,13 +1,22 @@
 server:
   port: 9000
 spring:
-#  profiles:
-#    active: native
+  profiles:
+    active: dev
+---
+spring:
+  profiles: native
   cloud:
     config:
       server:
-#        native:
-#          search-locations: classpath:config/
+        native:
+          search-locations: classpath:config/
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      server:
         git:
           uri: https://github.com/blusky10/study_microservice.git
           search-paths: config-repo
