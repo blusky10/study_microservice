@@ -21,4 +21,5 @@ public class PolpidUserServiceApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		log.info("Application : " + application);
 	}
+
 }
